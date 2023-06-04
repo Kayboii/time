@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kays Time Website</title>
+</head>
+<body>
+    <div class="container">
+        <img src="photo-1548318281-7da3085ce691.avif">
+        <h1 id="current-time"></h1>
+<div class="quotes">
+    <p>TODAY'S QUOTES</p>
+    <h2>Lost Time Is Never Found Again.</h2>
+</div>
+    </div>
+
+
+    <script>
+         let Time = document.getElementById("current-time")
+setInterval(() =>{
+   
+        let d = new Date();
+        Time.innerHTML = d.toLocaleTimeString();
+},1000)
+    </script>
+</body>
+</html>
